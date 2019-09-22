@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <style>
+        /* Design for option: */
+        /* https://codepen.io/FrankieDoodie/pen/Pyrqyp */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        form {
+            display: inline-block;
+        }
+        
+        .container1,
+        .container2 {
+            width: 70%;
+            margin-left: 15%;
+            border: 3px solid blue;
+            border-radius: 7px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 5%;
+        }
+        
+        input {
+            padding: 15px;
+            border-radius: 7px;
+            border-style: solid;
+        }
+        
+        select {
+            padding: 8px;
+            width: 70px;
+            border: 1px solid blue;
+            border-radius: 7px;
+            color: blue;
+            font-size: 20px;
+        }
+        
+        select option {
+            color: blue;
+            font-size: 30px;
+        }
+        
+        .result {
+            color: blue;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <input type="text" placeholder="Please Enter a Number" id="num1">
+        <form action="" class="box">
+            <select name="arithmetic" id="mySelect">
+         <option value="0"></option>
+          <option value="SUM">+</option>
+          <option value="Subtraction">-</option>
+          <option value="Multiply">x</option>
+          <option value="Division">/</option>
+        </select>
+        </form>
+        <input type="text" placeholder="Please Enter a Number" id="num2">
+        <!-- two JavaScript onclick events in one element: -->
+        <button onclick="myFunction(); getNumbers()">Result</button>
+        <br>
+
+    </div>
+    <div class="container2">
+        <span id="output1" style="color: white"></span>
+        <span id="output2" style="color: white"></span>
+        <span class="result" id="result"></span>
+    </div>
+    <script src="./app.js">
+    </script>
+</body>
+
+</html>
